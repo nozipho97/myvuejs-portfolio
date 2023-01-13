@@ -1,67 +1,28 @@
 <template >
   <div id="about-section">
-    <div class="Heading">
-        <h3 calss="About">About</h3>
-    </div>
       <div class="about">
+        <h2>About</h2>
         <div class="container">
           <div class="child1">
-            <h1>Nozipho Mayila</h1>
-            <p>25 Years And I Am A Student At Life Choices Academy Doing Front End Development. A Very Dedicated Young Lady With A Passion In Web Programming.</p>
             <div class="row">
+            <h1>Nozipho Mayila</h1>
+            <p>25 Years And I Am A Student At Life Choices. A Very Dedicated Young Lady With A Passion In Web Programming.</p>
+            
               <div class="info">
-                <h3><span>Name: </span> Nozipho Mayila</h3>
-                <h3><span>Qualification: </span>Qualified programmer</h3>
+                <h3><span>Qualification: </span>Web Programmer</h3>
                 <h3><span>Post: </span>Front end developer</h3>
                 <h3><span>Language: </span>English</h3>
               </div>
             </div>
+            <div class="child2">
+              <img alt="logo" src="https://i.postimg.cc/SRRk1Pw0/Nozipho-Mayila-picture-1.jpg" style="height:500px; width:600px">
+            </div>
           </div>
         </div>
-      </div>    
-          <div class="child2">
-            <img alt="logo" src="https://i.postimg.cc/SRRk1Pw0/Nozipho-Mayila-picture-1.jpg">
-          </div>
-        </div>
-
-  <div class="progress-bar">
-    <h1 class="heading"><span>My</span> skills</h1>
-    <div class="container">
-        <div class="progress">
-            <div class="progress-bar bg-warning"
-                style="width:90%;">
-                HTML
-            </div>
-      </div><br>
-
-        <div class="progress">
-            <div class="progress-bar bg-warning"
-                style="width:90%;">
-                CSS
-            </div>
-        </div><br>
-        <div class="progress">
-            <div class="progress-bar bg-warning"
-                style="width:85%;">
-                BOOTSTRAP
-            </div>
-        </div><br>
-        <div class="progress">
-            <div class="progress-bar bg-warning"
-                style="width:75%;">
-                PYTHON
-            </div>
-        </div><br>
-        <div class="progress">
-            <div class="progress-bar bg-warning"
-                style="width:65%;">
-                VUE 
-            </div>
-        </div><br>
-        
-    </div>
-  </div>
-
+      </div> 
+  </div> 
+    
+  
 </template>
 <script>
 export default {
@@ -73,28 +34,51 @@ export default {
 
 #about-section{
     padding-top:125px;
+    display: flex;
+}
+
+#about-section h1{
+  font-size: x-large;
+  color: sandybrown;
+  text-decoration: underline;
 }
 .about{
-    border: 1px solid black;
+    border: 1px solid saddlebrown;
     margin: 1rem;
     padding: 2rem 2rem;
     text-align: center;
-    
+    color: sandybrown;
+    font-weight: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-left: 60px;
+    background-color: saddlebrown;
+  }
+
+  .heading{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-decoration: underline;
+    color: saddlebrown;
+    text-align: center;
   }
   
   .child1{
-    display: inline-block;
-    border: 1px solid red;
+    display: flex;
     padding: 1rem 1rem;
     vertical-align: middle;
+    margin: 50px;
   }
   
-  .child2{
-    display: inline-block;
-    border: 1px solid red;
-    padding: 1rem 1rem;
-    vertical-align: middle;
+  .info span{
+    font-weight: bold;
   }
+
+  .child2 img:hover{
+    background-size: 110%;
+    box-shadow: 10px 10px 0  sandybrown , -10px -10px 0  saddlebrown;
+  }
+  
    
    
 </style> 

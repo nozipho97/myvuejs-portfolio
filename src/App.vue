@@ -22,7 +22,7 @@ export default {
 
 
 
-<style>
+<style scoped>
 #app {
   font-family:Georgia, 'Times New Roman', Times, serif;
   -webkit-font-smoothing: antialiased;
@@ -31,21 +31,6 @@ export default {
   background-color: saddlebrown;
   background-size: cover;
   justify-items: center;
-}
-
-nav {
-  color:sandybrown;
-  padding: 20px;
-}
-
-nav a {
-  font-weight: bold;
-  color: sandybrown;
-  text-decoration: none;
-  justify-content: space-evenly;
-  margin-left:50px;
-  margin-right:50px;
-
 }
 
 </style>

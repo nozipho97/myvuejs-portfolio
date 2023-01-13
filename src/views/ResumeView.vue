@@ -1,13 +1,15 @@
 <template>
     <div>
-        <Resume></Resume>
+        <ResumeVue></ResumeVue>
     </div>
 </template>
 <script>
-import Resume from '../components/Resume.vue'
+import ResumeVue from '../components/ResumeVue.vue'
 export default {
-    name: 'Resume',
-    components:{Resume}
+    name: 'ResumeView',
+    components: {
+        ResumeVue
+    }
 }
 </script>
 <style lang>

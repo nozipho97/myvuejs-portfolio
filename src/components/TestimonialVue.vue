@@ -1,14 +1,15 @@
 <template>
     <div>
         <h1>Testimonials</h1>
-        <div class="card" style="width: 18rem;" v-for="person in people">
-            <img :src="person.image" class="card-img-top" >
-            <div class="card-body">
-              <h5 class="card-title">{{person.name}}</h5>
-              <p class="card-text">{{person.msg}}</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
+        <div class="container">
+            <div class="card" style="width: 18rem; height:50rem;" v-for="person in people">
+                <img :src="person.image" class="card-img-top" >
+                <div class="card-body">
+                  <h5 class="card-title">{{person.name}}</h5>
+                  <p class="card-text">{{person.msg}}</p>
+                </div>
+              </div>
+        </div>
     </div>
 
 </template>
@@ -32,20 +33,26 @@ export default {
                 {
                     name: 'Asandile Langeni',
                     status: 'LC Student',
-                    msg: 'Nozipho is a girl that is down to earth and she is always in her element. She is a hard worker and a team player. She loves to be surrounded by friends and family.  She is always willing to go an extra mile in order to pull her weight.<',
-                    image:'https://i.postimg.cc/ZY8gvmDC/asandile-langeni.jpg'
+                    msg: 'Nozipho is a girl that is down to earth and she is always in her element. She is a hard worker and a team player. She loves to be surrounded by friends and family.  She is always willing to go an extra mile in order to pull her weight.',
+                    image:'https://i.postimg.cc/vZsJfmJQ/DSC-3625.jpg'
                 },
                 {
                     name: 'Sivuyisiwe Cele',
                     status: 'LC Student',
                     msg: 'Nozipho is one dedicated young lady and I have worked with her couple of times and she is one organized, puntual and detailed person.',
-                    image:'https://i.postimg.cc/K8Hsh84s/C11-Sivuyisiwe-3.jpg'
+                    image:'https://i.postimg.cc/50Vbt3fm/C11-Sivuyisiwe-1.jpg'
                 },
                 {
                     name: 'Oslin Johnson',
                     status: 'LC Student',
                     msg: 'Nozipho very rarely struggles to the point of needing any help, which shows   off traits that presents her as a really fast & strong learner that is able to assess a problem at hand and solve it within minutes. Nozipho also comes across as shy and quiet, but once engaging in conversation she shows off her great sense of humor.',
                     image:'https://i.postimg.cc/J0Rg09WK/oslin.jpg'
+                },
+                {
+                    name: 'Abdul-Azeez Kemp',
+                    status: 'LC Student',
+                    msg: 'Nozipho is very ambitious and very aunthentic. Puts attention to detail and very observant.',
+                    image:'https://i.postimg.cc/1t9rPkVc/C11-Abdul-Azeez-Kemp-1.jpg'
                 }
             ],
         }
@@ -53,5 +60,24 @@ export default {
 }
 </script>
 <style>
-    
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: sandybrown;
+    }
+
+    .card{
+        height: 10rem;
+    }
+
+    .card-body{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: saddlebrown;
+    }
+
+    .card-title{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: saddlebrown;
+        font-weight: bold;
+    }
 </style>
