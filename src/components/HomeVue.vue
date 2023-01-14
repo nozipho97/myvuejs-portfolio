@@ -51,7 +51,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #ECECEC;
+  background-color: sandybrown;
   gap: 2rem;
 }
 
@@ -69,7 +69,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  box-shadow: 10px 10px 0 saddlebrown , -10px -10px 0  sandybrown;
+  box-shadow: 10px 10px 0 saddlebrown , -10px -10px 0  lightsalmon;
   border-radius: 50%;
   animation: rotate 4s infinite linear;
 }
@@ -90,7 +90,7 @@ body {
 
 }
 .occupation{
-  color: sandybrown;
+  color: rgba(154, 72, 0, 0.591);
 }
 .profile:hover{
   background-size: 110%;

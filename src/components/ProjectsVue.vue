@@ -1,15 +1,17 @@
 <template>
     <div>
+    <div class="container">
         <h1>Projects</h1>
-        <div class="card" style="width: 18rem;" v-for="person in people">
-            <img :src="person.image" class="card-img-top" >
+        <div class="card" style="width: 400px;height:500px;" v-for="person in people">
+            <img :src="person.image" class="card-img-top" style="height: 300px;" >
             <div class="card-body">
               <h5 class="card-title">{{person.name}}</h5>
               <p class="card-text">{{person.msg}}</p>
-              <a href="#" class="btn btn-warning">Netlify</a>
-              <a href="#" class="btn btn-warning">Github</a>
+              <a :href="person.netlify" class="btn btn-dark" target="_blank">Netlify</a>
+              <a :href="person.github" class="btn btn-dark">Github</a>
             </div>
           </div>
+    </div>
     </div>
 
 </template>
@@ -19,40 +21,82 @@ export default {
         return {
             people: [
                 {
-                    name: 'Nontobeko Mhlongo',
-                    status: 'LC Student',
-                    msg: 'Nozipho is smart and very approachable, humble and  well spoken.',
-                    image:'https://i.postimg.cc/FsGBGZvv/C11-Nontobeko-Mhlongo-1.jpg'
+                    name: 'Portfolio',
+                    msg: 'A portfolio based on myself, my experiences and the work I did.',
+                    image: 'https://i.postimg.cc/ZYVX1VgQ/portfolio.jpg',
+                    netlify: 'https://nozipho-portfolio.netlify.app',
+                    github:'https://github.com/nozipho97/port-folio.git'
                 },
                 {
-                    name: 'Keren Bruce',
-                    status: 'LC Student',
-                    msg: 'Nozipho is a wonderful hard-working worker with a soft kind personality and a warm heart. She always ensures that goals are being met the way they are required to. She is highly creative and creates beautiful innovative projects which showcase her amazing technical abilities. She would make a highly efficient and wonderful asset to your company.',
-                    image:'https://i.postimg.cc/7YqRgRpX/keren-bruce.jpg'
+                    name: 'Calculator',
+                    msg: 'A normal calculator built with HTML, CSS and JavaScript.',
+                    image: 'https://i.postimg.cc/4N4scKCD/calculator.jpg',
+                    netlify:'https://nozipho-calculator.netlify.app',
+                    github: 'https://github.com/nozipho97/Calculator.git'
                 },
                 {
-                    name: 'Asandile Langeni',
-                    status: 'LC Student',
-                    msg: 'Nozipho is a girl that is down to earth and she is always in her element. She is a hard worker and a team player. She loves to be surrounded by friends and family.  She is always willing to go an extra mile in order to pull her weight.<',
-                    image:'https://i.postimg.cc/ZY8gvmDC/asandile-langeni.jpg'
+                    name: 'Netflix',
+                    msg: 'A netflix website built with HTML and CSS.',
+                    image: 'https://i.postimg.cc/wvzSdPgC/istockphoto-1126827760-612x612.jpg',
+                    netlify: 'https://nozipho-netflix.netlify.app',
+                    github:'https://github.com/nozipho97/NetflifClone.git'
                 },
                 {
-                    name: 'Sivuyisiwe Cele',
-                    status: 'LC Student',
-                    msg: 'Nozipho is one dedicated young lady and I have worked with her couple of times and she is one organized, puntual and detailed person.',
-                    image:'https://i.postimg.cc/K8Hsh84s/C11-Sivuyisiwe-3.jpg'
+                    name: 'E-commerce',
+                    msg: 'An e-commerce website built with HTML, CSS, JavaScript',
+                    image: 'https://i.postimg.cc/MTbJMw9Z/ecommerce.jpg',
+                    netlify: 'https://nozipho-jsproject.netlify.app',
+                    github:'https://github.com/nozipho97/JS-Project.git'
                 },
                 {
-                    name: 'Oslin Johnson',
-                    status: 'LC Student',
-                    msg: 'Nozipho very rarely struggles to the point of needing any help, which shows   off traits that presents her as a really fast & strong learner that is able to assess a problem at hand and solve it within minutes. Nozipho also comes across as shy and quiet, but once engaging in conversation she shows off her great sense of humor.',
-                    image:'https://i.postimg.cc/J0Rg09WK/oslin.jpg'
+                    name: 'Sneaker',
+                    msg: 'A basic website on e-commerce built with HTML and CSS.',
+                    image: 'https://i.postimg.cc/K8gV3FzX/sneaker.jpg',
+                    netlify: 'https://sneaker-mania.netlify.app',
+                    github:'https://github.com/nozipho97/sneaker-project.git'
+                },
+                {
+                    name: 'Basic Site',
+                    msg: 'Basic site built with HTML and CSS',
+                    image: 'https://i.postimg.cc/9FbRdzW6/istockphoto-1047790854-170667a.jpg',
+                    netlify: 'basicsitebasic.netlify.app',
+                    github:'https://github.com/nozipho97/basicsite.git'
                 }
             ],
         }
     }
 }
 </script>
-<style>
+<style scoped>
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: sandybrown;
+}
+
+.container h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
     
+}
+
+
+.card{
+    margin-top: 70px;
+    display: flex;
+
+}
+
+.card-body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: saddlebrown;
+}
+
+.card-title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: saddlebrown;
+    font-weight: bold;
+}
 </style>

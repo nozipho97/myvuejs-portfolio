@@ -13,6 +13,13 @@
                 <h3><span>Post: </span>Front end developer</h3>
                 <h3><span>Language: </span>English</h3>
               </div>
+                <div class="skills">
+                  <h3>My Skills</h3>
+                <i class="fa-brands fa-html5"> 90%</i> |
+                <i class="fa-brands fa-js"> 70%</i> |
+                <i class="fa-brands fa-css3"> 95%</i> |
+                <i class="fa-brands fa-vuejs"> 75%</i>
+              </div> 
             </div>
             <div class="child2">
               <img alt="logo" src="https://i.postimg.cc/SRRk1Pw0/Nozipho-Mayila-picture-1.jpg" style="height:500px; width:600px">
@@ -77,6 +84,10 @@ export default {
   .child2 img:hover{
     background-size: 110%;
     box-shadow: 10px 10px 0  sandybrown , -10px -10px 0  saddlebrown;
+  }
+
+  .skills{
+    justify-content: space-between;
   }
   
    
